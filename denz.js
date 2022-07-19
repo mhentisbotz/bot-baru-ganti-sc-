@@ -955,8 +955,6 @@ denz.updatePresence(from, Presence.recording)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `*Halo ${pushname}*
-*Kalo buttonnya gak ada*
-*ketik #allmenu*
 
 BOT-INFO
 - Owner : @${otod.split('@')[0]}
@@ -972,7 +970,7 @@ TIME-INFO
 - Wit : ${timeWit}  
 - Hari : ${week} ${weton}
 - Tanggal : ${calender}`
-sendButLocation(from, `${menu}`, `${uwu}H E L G A 右${uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU📒'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'DEVELOPER👤'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🌹'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, `${uwu}M I K A Z U{uwu}`, {jpegThumbnail:ofrply}, [{buttonId:`${prefix}allmenu`,buttonText:{displayText:'MENU MIKAZU🌹'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'OWNER GANZ😎'},type:1},{buttonId:`${prefix}script`,buttonText:{displayText:'SCRIPT🎉'},type:1}], {contextInfo: { mentionedJid: [ptod,dtod,otod,stod]}})
 break
 case 'allmenu':
         ptod = "6282138919347@s.whatsapp.net"
@@ -1257,7 +1255,7 @@ break
 case 'command':
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Helga Ilham_*',
+ footerText: '*https://is.gd/4ZPpIt*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -2082,7 +2080,7 @@ break
 				case 'script':
 		case 'sc':
 		case 'sourcecode':
-		denz.sendMessage(from, { text: "https://github.com/HelgaIlham\n\nhttps://github.com/HelgaIlham", matchedText: 'https://github.com/HelgaIlham', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		denz.sendMessage(from, { text: "di YT BANYAK ", matchedText: 'di YT BANYAK', description: "SC ASLI DI : https://is.gd/4ZPpIt", title: "Jangan Click Ini", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
        case 'debug':
 			 res = await denz.prepareMessageFromContent(from,{
